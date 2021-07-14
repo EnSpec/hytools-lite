@@ -1,0 +1,3 @@
+# hytools-lite dependencies
+h5py
+numpy
