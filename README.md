@@ -12,5 +12,5 @@ For documentation and examples see [hytools.readthedocs.io](https://hytools.read
 ## Installation
 
 ```bash
-python setup.py install
+pip install hy-tools-lite
 ```
