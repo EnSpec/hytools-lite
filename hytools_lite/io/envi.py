@@ -89,7 +89,7 @@ field_dict = {"acquisition time": "str",
               "z plot titles": "str"}
 
 
-def open_envi(hy_obj,anc_path = {}):
+def open_envi(hy_obj,anc_path = {}, ext = False):
     """Open ENVI formated image file and populate Hytools object.
 
 
@@ -103,7 +103,13 @@ def open_envi(hy_obj,anc_path = {}):
 
     """
 
-    if not os.path.isfile(os.path.splitext(hy_obj.file_name)[0] + ".hdr"):
+
+    if ext:
+        header_file = os.path.splitext(hy_obj.file_name)[0] + ".hdr"
+    else:
+        header_file = hy_obj.file_name + ".hdr"
+
+    if not os.path.isfile(header_file):
         print("ERROR: Header file not found.")
         return None
 
