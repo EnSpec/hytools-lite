@@ -3,7 +3,7 @@ from hytools_lite import __version__
 
 setup(
     name='hy-tools-lite',
-    description= 'HyTools: Hyperspectral image processing library',
+    description= 'HyTools Lite: Hyperspectral image processing library',
     version = __version__,
     license ='GNU General Public License v3.0',
     url='https://github.com/EnSpec/hytools-lite',
