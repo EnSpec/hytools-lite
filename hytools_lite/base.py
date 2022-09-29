@@ -69,7 +69,7 @@ class HyTools:
         self.wavelength_units = None
         self.wavelengths = []
 
-    def read_file(self,file_type = 'envi',anc_path = None, ext = False):
+    def read_file(self,file_name,file_type = 'envi',anc_path = None, ext = False):
         self.file_name = file_name
         self.file_type = file_type
 
